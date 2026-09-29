@@ -18,8 +18,7 @@ venv.bak/
 !.env.example
 .envrc
 
-# Real configuration: never commit if it contains access data
-config.py
+# Local configuration files containing access data
 config.json
 settings.json
 secrets.json
