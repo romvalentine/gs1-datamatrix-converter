@@ -1,18 +1,24 @@
-# Python cache
+# Python cache and compiled files
 __pycache__/
 *.py[cod]
+*$py.class
 
 # Virtual environments
 .venv/
+.venv
 venv/
 env/
+ENV/
+env.bak/
+venv.bak/
 
 # Local secrets and settings
 .env
 .env.*
 !.env.example
+.envrc
 
-# Real configuration: ignore it if it contains tokens/passwords
+# Real configuration: never commit if it contains access data
 config.py
 config.json
 settings.json
@@ -25,20 +31,7 @@ tokens.json
 dmx_memory.json
 dmx_settings.json
 
-# Logs
-*.log
-logs/
-
-# Reports and generated documents
-reports/
-*.pdf
-
-# Local databases
-*.db
-*.sqlite
-*.sqlite3
-
-# Certificates and electronic-signature keys
+# Certificates, private keys and electronic signature files
 *.pem
 *.key
 *.pfx
@@ -46,14 +39,67 @@ reports/
 *.cer
 *.crt
 
-# IDE
-.vscode/
-.idea/
+# Logs
+*.log
+logs/
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Build files
+# Reports and generated documents
+reports/
+*.pdf
+
+# Local databases and caches
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
+*.rdb
+*.aof
+*.pid
+
+# Python build and packaging files
 build/
 dist/
+downloads/
+*.egg-info/
+.eggs/
+*.egg
+wheels/
+share/python-wheels/
+MANIFEST
+*.manifest
+*.spec
+
+# Test, coverage, linter and type-checker caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache
+.hypothesis/
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# Jupyter and IPython
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# IDE settings
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
 
 # Windows
 Thumbs.db
 Desktop.ini
+
+# Temporary files
+tempCodeRunnerFile.py
