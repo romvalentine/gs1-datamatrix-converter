@@ -1,0 +1,5 @@
+Pillow
+PyMuPDF
+pylibdmtx
+pyStrich
+reportlab

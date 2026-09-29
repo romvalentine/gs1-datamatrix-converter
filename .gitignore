@@ -1,0 +1,59 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local secrets and settings
+.env
+.env.*
+!.env.example
+
+# Real configuration: ignore it if it contains tokens/passwords
+config.py
+config.json
+settings.json
+secrets.json
+credentials.json
+token.json
+tokens.json
+
+# Local Data Matrix history/settings
+dmx_memory.json
+dmx_settings.json
+
+# Logs
+*.log
+logs/
+
+# Reports and generated documents
+reports/
+*.pdf
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Certificates and electronic-signature keys
+*.pem
+*.key
+*.pfx
+*.p12
+*.cer
+*.crt
+
+# IDE
+.vscode/
+.idea/
+
+# Build files
+build/
+dist/
+
+# Windows
+Thumbs.db
+Desktop.ini
